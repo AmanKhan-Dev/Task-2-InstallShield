@@ -1,0 +1,10 @@
+{
+  "Settings": {
+    "AppName": "InstallSCRInstaller",
+    "Company": "InstallScriptCompany",
+    "Version": "1.0.0",
+    "Environment": "Production",
+    "LoggingEnabled": true,
+    "MaxRetryAttempts": 3
+  }
+}

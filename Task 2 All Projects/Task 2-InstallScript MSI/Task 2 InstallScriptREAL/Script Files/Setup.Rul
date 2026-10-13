@@ -1,0 +1,46 @@
+// ============================================================================
+// Project Name: Task 2 InstallScriptREAL
+// Author: Aman
+// Publisher: InstallScriptCompany
+// File: setup.rul
+// ============================================================================
+
+#include "ifx.h"
+
+// Prototype for exported custom action
+export prototype MyCustomAction(HWND);
+
+// ----------------------------------------------------------------------------
+// Task: Installation Validation
+// Runs automatically at setup startup
+// ----------------------------------------------------------------------------
+function OnBegin()
+begin
+    // 1. Validation: Administrative Privileges Check
+    // In InstallScript, we use Is(USER_ADMINISTRATOR, "") to verify admin rights.
+    if (!Is(USER_ADMINISTRATOR, "")) then
+        MessageBox("Administrator privileges are required to install InstallSCRInstaller. Please re-run as Administrator.", SEVERE);
+        abort;
+    endif;
+end;
+
+// ----------------------------------------------------------------------------
+// Custom Action Function: MyCustomAction
+// Perform registry operations and file copying silently to prevent hangs
+// ----------------------------------------------------------------------------
+function MyCustomAction(hMSI)
+    STRING szKey, szTargetDir;
+    NUMBER nBufferSize;
+begin
+    // 1. Safely retrieve TARGETDIR from the MSI database session
+    nBufferSize = 256;
+    MsiGetProperty(hMSI, "TARGETDIR", szTargetDir, nBufferSize);
+
+    // 2. Target Registry Operations
+    RegDBSetDefaultRoot(HKEY_LOCAL_MACHINE);
+    szKey = "SOFTWARE\\InstallScriptCompany\\InstallSCRInstaller";
+
+    // Write installation path and version info
+    RegDBSetKeyValueEx(szKey, "InstallDir", REGDB_STRING, szTargetDir, -1);
+    RegDBSetKeyValueEx(szKey, "Version", REGDB_STRING, "1.0.0", -1);
+end;

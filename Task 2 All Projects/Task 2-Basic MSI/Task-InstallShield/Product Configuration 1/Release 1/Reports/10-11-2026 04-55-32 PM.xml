@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\Program Files (x86)\InstallShield\2026\Support\0409\buildreport.xsl"?>
+<BuildReport ProductName="MyProductInstaller" ProductVersion="1.0.0" Built="10-11-2026 04-55-32 PM" Config="Product Configuration 1" Media="Release 1" Uncompressed="0.00 MB">
+  <Features>
+    <Feature Title="##ID_STRING3##">FeatureTXT</Feature>
+  </Features>
+  <Components>
+    <Component x64="32">AllOtherFiles</Component>
+    <Component x64="32">AllOtherFiles1</Component>
+    <Component x64="32">ISRegistryComponent</Component>
+    <Component x64="32" KeyPath="vlc_3.0.24_win64.exe">vlc_3.0.24_win64.exe</Component>
+  </Components>
+  <Prerequisites />
+  <MergeModules />
+  <DynamicLinks />
+  <Files>
+    <File Destination="{TXTFILES} [ProgramFilesFolder]AmanUTT\MyProductInstaller\TXTFiles" Component="AllOtherFiles" Modified="09-10-2026 20:08:08" Size="21" Version="">Txt1.txt</File>
+    <File Destination="{TXTFILES} [ProgramFilesFolder]AmanUTT\MyProductInstaller\TXTFiles" Component="AllOtherFiles" Modified="09-10-2026 20:08:40" Size="21" Version="">txt2.txt</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]AmanUTT\MyProductInstaller" Component="AllOtherFiles1" Modified="09-10-2026 20:09:53" Size="15680" Version="">products-100.csv</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]AmanUTT\MyProductInstaller" Component="AllOtherFiles1" Modified="09-10-2026 20:11:14" Size="843" Version="">sample.pdf</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]AmanUTT\MyProductInstaller" Component="vlc_3.0.24_win64.exe" Modified="09-10-2026 20:08:17" Size="46269360" Version="">vlc-3.0.24-win64.exe</File>
+  </Files>
+</BuildReport>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\Program Files (x86)\InstallShield\2026\Support\0409\buildreport.xsl"?>
+<BuildReport ProductName="Multi Feature Deployment Demo" ProductVersion="1.0.0" Built="10-11-2026 08-34-49 PM" Config="Product Configuration 1" Media="Release 1" Uncompressed="0.00 MB">
+  <Features>
+    <Feature Title="##ID_STRING1##" Description="##ID_STRING5##">CoreApplication</Feature>
+    <Feature Title="##ID_STRING2##" Description="##ID_STRING6##">Documentation</Feature>
+    <Feature Title="##ID_STRING3##" Description="##ID_STRING7##">Tools</Feature>
+    <Feature Title="##ID_STRING4##" Description="##ID_STRING8##">Utilities</Feature>
+  </Features>
+  <Components>
+    <Component x64="32">AllOtherFiles</Component>
+    <Component x64="32">AllOtherFiles1</Component>
+    <Component x64="32">AllOtherFiles3</Component>
+    <Component x64="32" KeyPath="myapp.exe">MyApp.exe</Component>
+    <Component x64="32" KeyPath="tool.exe">Tool.exe</Component>
+  </Components>
+  <Prerequisites />
+  <MergeModules />
+  <DynamicLinks />
+  <Files>
+    <File Destination="{CORE} [ProgramFilesFolder]MyMultiCompany\MultiFeatureDeploy\Core" Component="MyApp.exe" Modified="11-10-2026 19:45:21" Size="0" Version="">MyApp.exe</File>
+    <File Destination="{DOCS} [ProgramFilesFolder]MyMultiCompany\MultiFeatureDeploy\Docs" Component="AllOtherFiles1" Modified="09-10-2026 20:09:53" Size="15680" Version="">products-100.csv</File>
+    <File Destination="{DOCS} [ProgramFilesFolder]MyMultiCompany\MultiFeatureDeploy\Docs" Component="AllOtherFiles1" Modified="09-10-2026 20:11:14" Size="843" Version="">sample.pdf</File>
+    <File Destination="{DOCS} [ProgramFilesFolder]MyMultiCompany\MultiFeatureDeploy\Docs" Component="AllOtherFiles1" Modified="09-10-2026 20:08:08" Size="21" Version="">Txt1.txt</File>
+    <File Destination="{DOCS} [ProgramFilesFolder]MyMultiCompany\MultiFeatureDeploy\Docs" Component="AllOtherFiles1" Modified="09-10-2026 20:08:40" Size="21" Version="">txt2.txt</File>
+    <File Destination="{TOOLS} [ProgramFilesFolder]MyMultiCompany\MultiFeatureDeploy\Tools" Component="Tool.exe" Modified="11-10-2026 19:52:41" Size="0" Version="">Tool.exe</File>
+    <File Destination="{UTILITIES} [ProgramFilesFolder]MyMultiCompany\MultiFeatureDeploy\Tools\Utilities" Component="AllOtherFiles3" Modified="11-10-2026 19:50:11" Size="22" Version="">Utility1.txt.txt</File>
+    <File Destination="{UTILITIES} [ProgramFilesFolder]MyMultiCompany\MultiFeatureDeploy\Tools\Utilities" Component="AllOtherFiles3" Modified="11-10-2026 19:49:58" Size="22" Version="">Utility2.txt.txt</File>
+  </Files>
+</BuildReport>

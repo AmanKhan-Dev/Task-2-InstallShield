@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\Program Files (x86)\InstallShield\2026\Support\0409\buildreport.xsl"?>
+<BuildReport ProductName="InstallSCRInstaller" ProductVersion="1.0.0" Built="10-11-2026 05-09-06 PM" Config="Product Configuration 1" Media="Release 1" Uncompressed="0.00 MB">
+  <Features>
+    <Feature Title="DefaultFeature">DefaultFeature</Feature>
+  </Features>
+  <Components>
+    <Component x64="32">AllOtherFiles</Component>
+    <Component x64="32">DefaultComponent</Component>
+  </Components>
+  <Prerequisites />
+  <MergeModules />
+  <DynamicLinks />
+  <Files>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]InstallScriptCompany\ProductFiles" Component="AllOtherFiles" Modified="09-10-2026 20:08:08" Size="21" Version="">Txt1.txt</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]InstallScriptCompany\ProductFiles" Component="AllOtherFiles" Modified="09-10-2026 20:08:40" Size="21" Version="">txt2.txt</File>
+  </Files>
+</BuildReport>
